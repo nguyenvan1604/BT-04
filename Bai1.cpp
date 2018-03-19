@@ -75,6 +75,8 @@ void printList(node *head) //In DS
 
 node *daochieu1(node *head)
 {
+    if(head == NULL)
+        return NULL;
     node *p = NULL;
     while(head != NULL)
     {
@@ -86,6 +88,8 @@ node *daochieu1(node *head)
 
 node *daochieu2(node *head)
 {
+    if(head == NULL)
+        return NULL;
     node *p1 = NULL, *p2 = head, *p3 = head->next;
     while(p3 != NULL)
     {
@@ -100,6 +104,8 @@ node *daochieu2(node *head)
 
 node *daochieu3(node *head)
 {
+    if(head == NULL)
+        return NULL;
     if(head->next->next == NULL)
     {
         head->next->next = head;
@@ -132,7 +138,7 @@ int main()
     printList(head);
 
     cout<<"\n\nDS xoa cuoi:\n";
-    deleteLast(head);
+    head = deleteLast(head);
     printList(head);
 
     cout<<"\n\nDS dao nguoc lan 1:\n";
