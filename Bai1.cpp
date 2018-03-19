@@ -119,7 +119,6 @@ node *daochieu3(node *head)
     return p;
 }
 
-
 int main()
 {
     node *head = NULL;
@@ -156,10 +155,3 @@ int main()
     cout<<endl;
     return 0;
 }
-
-
-
-
-
-
-
